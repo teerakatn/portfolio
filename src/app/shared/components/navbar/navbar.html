@@ -1,0 +1,32 @@
+<nav [class.scrolled]="isScrolled" class="navbar">
+  <div class="nav-container">
+    <button type="button" class="nav-brand" (click)="scrollToSection('hero', $event)">
+      <span class="brand-dot"></span> Portfolio
+    </button>
+
+    <ul class="nav-links" [class.open]="isMenuOpen">
+      <li>
+        <button type="button" class="nav-link-btn" [class.active]="activeSection === 'hero'" (click)="scrollToSection('hero', $event)">{{ 'nav.home' | translate }}</button>
+      </li>
+      <li>
+        <button type="button" class="nav-link-btn" [class.active]="activeSection === 'about'" (click)="scrollToSection('about', $event)">{{ 'nav.about' | translate }}</button>
+      </li>
+      <li>
+        <button type="button" class="nav-link-btn" [class.active]="activeSection === 'skills'" (click)="scrollToSection('skills', $event)">{{ 'nav.skills' | translate }}</button>
+      </li>
+      <li>
+        <button type="button" class="nav-link-btn" [class.active]="activeSection === 'portfolio'" (click)="scrollToSection('portfolio', $event)">{{ 'nav.projects' | translate }}</button>
+      </li>
+      <li>
+        <button type="button" class="nav-link-btn" [class.active]="activeSection === 'contact'" (click)="scrollToSection('contact', $event)">{{ 'nav.contact' | translate }}</button>
+      </li>
+    </ul>
+
+    <div class="nav-actions">
+      <button class="lang-btn" (click)="langService.toggle()">
+        {{ langService.currentLang === 'th' ? 'EN' : 'TH' }}
+      </button>
+      <button type="button" class="menu-btn" (click)="toggleMenu()">☰</button>
+    </div>
+  </div>
+</nav>

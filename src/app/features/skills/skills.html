@@ -1,0 +1,25 @@
+<section id="skills" class="skills-section">
+  <div class="container">
+    <h2 class="section-title" data-aos="fade-up">
+      {{ 'skills.title' | translate }}
+    </h2>
+    <div class="skills-grid">
+      <div
+        class="skill-group"
+        *ngFor="let group of skillGroups; let i = index"
+        data-aos="fade-up"
+        [attr.data-aos-delay]="i * 100"
+      >
+        <div class="group-header">
+          <span class="group-icon">{{ group.icon }}</span>
+          <h3>{{ group.category }}</h3>
+        </div>
+        <div class="skill-list">
+          <div class="skill-item" *ngFor="let skill of group.skills">
+            <span class="skill-name">{{ skill }}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

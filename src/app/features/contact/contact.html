@@ -1,0 +1,75 @@
+<section id="contact" class="contact-section">
+  <div class="container">
+    <h2 class="section-title" data-aos="fade-up">
+      {{ 'contact.title' | translate }}
+    </h2>
+    <div class="contact-grid">
+      <div class="contact-info" data-aos="fade-right">
+        <div class="info-item">
+          <span>📧</span>
+          <p>teerakan.bo@ku.th</p>
+        </div>
+        <div class="info-item">
+          <span>📱</span>
+          <p>081-418-4720</p>
+        </div>
+        <div class="info-item">
+          <span>🐙</span>
+          <a href="https://github.com/teerakatn" target="_blank" rel="noopener noreferrer">
+            https://github.com/teerakatn
+          </a>
+        </div>
+      </div>
+
+      <form
+        class="contact-form"
+        [formGroup]="contactForm"
+        (ngSubmit)="onSubmit()"
+        data-aos="fade-left"
+      >
+        <div class="form-group">
+          <input
+            formControlName="name"
+            [placeholder]="'contact.name' | translate"
+            [class.invalid]="f['name'].touched && f['name'].invalid"
+          />
+          <span class="error-msg" *ngIf="f['name'].touched && f['name'].invalid">
+            กรุณากรอกชื่อ
+          </span>
+        </div>
+
+        <div class="form-group">
+          <input
+            formControlName="email"
+            type="email"
+            [placeholder]="'contact.email' | translate"
+            [class.invalid]="f['email'].touched && f['email'].invalid"
+          />
+          <span class="error-msg" *ngIf="f['email'].touched && f['email'].invalid">
+            อีเมลไม่ถูกต้อง
+          </span>
+        </div>
+
+        <div class="form-group">
+          <textarea
+            formControlName="message"
+            rows="5"
+            [placeholder]="'contact.message' | translate"
+            [class.invalid]="f['message'].touched && f['message'].invalid"
+          ></textarea>
+        </div>
+
+        <button type="submit" [disabled]="loading">
+          {{ loading ? ('contact.sending' | translate) : ('contact.send' | translate) }}
+        </button>
+
+        <div class="status success" *ngIf="status === 'success'">
+          {{ 'contact.success' | translate }}
+        </div>
+        <div class="status error" *ngIf="status === 'error'">
+          {{ 'contact.error' | translate }}
+        </div>
+      </form>
+    </div>
+  </div>
+</section>

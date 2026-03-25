@@ -1,0 +1,55 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "skills": "Skills",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "hero": {
+    "greeting": "Hello, My name is",
+    "name": "Teerakarn Boonmark",
+    "role": "Frontend Developer",
+    "sub": "Co-op Student | Kasetsart University",
+    "cta": "My Work",
+    "contact": "Contact Me"
+  },
+  "about": {
+    "title": "About Me",
+    "description": "Co-op student",
+    "info": {
+      "university": {
+        "label": "University",
+        "value": "Kasetsart University"
+      },
+      "major": {
+        "label": "Major",
+        "value": "Information Technology"
+      },
+      "internship": {
+        "label": "Internship Location",
+        "value": "Company"
+      },
+      "duration": {
+        "label": "Duration",
+        "value": "4th Year, Semester 2"
+      }
+    }
+
+  },
+  "contact": {
+    "title": "Contact",
+    "name": "Teerakan Boonmak",
+    "email": "example@domain.com",
+    "message": "Message",
+    "send": "Send Message",
+    "success": "Message sent!",
+    "error": "Something went wrong"
+  },
+  "skills": {
+    "title": "Skills"
+  },
+  "projects": {
+    "title": "Projects"
+  }
+}

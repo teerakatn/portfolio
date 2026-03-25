@@ -1,0 +1,138 @@
+.hero-section {
+  min-height: calc(100vh - 88px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+  padding: 40px 24px 72px;
+  max-width: 1200px;
+  margin: 0 auto;
+
+  .hero-content {
+    flex: 1;
+
+    .greeting {
+      color: #1565C0;
+      font-weight: 600;
+      font-size: 1.1rem;
+      margin-bottom: 8px;
+    }
+
+    .name {
+      font-size: 3rem;
+      font-weight: 800;
+      color: #1a1a2e;
+      margin: 1 1 8px;
+    }
+
+    .role {
+      font-size: 1.5rem;
+      color: #1565C0;
+      font-weight: 600;
+      margin: 0 1 16px;
+    }
+
+    .sub {
+      color: #666;
+      font-size: 1rem;
+      margin-bottom: 32px;
+    }
+
+    .hero-actions {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    .btn-primary {
+      background: #1565C0;
+      color: white;
+      padding: 12px 32px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: background 0.2s;
+
+      &:hover { background: #0D47A1; }
+    }
+
+    .btn-outline {
+      background: #1565C0;
+      color: white;
+      padding: 12px 32px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: background 0.2s;
+
+      &:hover { background: #0D47A1; }
+    }
+  }
+
+  .hero-image {
+    .profile-img {
+      width: 350px;
+      height: 370px;
+      border-radius: 50%;
+      object-fit: cover;
+      box-shadow: 0 20px 60px rgba(21, 101, 192, 0.25);
+      border: 5px solid white;
+      transition: transform 0.3s ease;
+
+      &:hover {
+        transform: scale(1.03);
+      }
+    }
+  }
+
+  @media (min-width: 768px) and (max-width: 1024px) {
+    gap: 40px;
+    padding: 32px 24px 64px;
+
+    .hero-content {
+      .name { font-size: 2.5rem; }
+      .role { font-size: 1.3rem; }
+    }
+
+    .hero-image {
+      .profile-img {
+        width: 230px;
+        height: 250px;
+      }
+    }
+  }
+
+  @media (max-width: 767px) {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 28px;
+    padding: 24px 16px 56px;
+    text-align: center;
+
+    .hero-content {
+      .name { font-size: 2rem; }
+      .role { font-size: 1.2rem; }
+      .sub { margin-bottom: 24px; }
+
+      .hero-actions {
+        justify-content: center;
+        gap: 12px;
+
+        .btn-primary,
+        .btn-outline {
+          width: 100%;
+          max-width: 320px;
+          text-align: center;
+        }
+      }
+    }
+
+    .hero-image {
+      .profile-img {
+        width: 200px;
+        height: 200px;
+      }
+    }
+  }
+}

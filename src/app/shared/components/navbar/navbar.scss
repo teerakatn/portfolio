@@ -1,0 +1,153 @@
+.navbar {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 1000;
+  background: transparent;
+  transition: all 0.3s ease;
+  padding: 16px 0;
+
+  &.scrolled {
+    background: white;
+    box-shadow: 0 2px 20px rgba(0,0,0,0.1);
+    padding: 8px 0;
+  }
+
+  .nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .nav-brand {
+    border: 0;
+    background: transparent;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #1565C0;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+
+    .brand-dot {
+      width: 8px; height: 8px;
+      background: #1565C0;
+      border-radius: 50%;
+    }
+  }
+
+  .nav-links {
+    display: flex;
+    list-style: none;
+    gap: 32px;
+    margin: 0; padding: 0;
+
+    .nav-link-btn {
+      border: 0;
+      background: transparent;
+      color: #333;
+      font-size: 0.95rem;
+      font-weight: 500;
+      padding: 0;
+      cursor: pointer;
+      transition: color 0.2s, transform 0.2s;
+
+      &:hover {
+        color: #1565C0;
+      }
+
+      &.active {
+        color: #1565C0;
+      }
+
+      &:active {
+        transform: translateY(1px);
+      }
+    }
+  }
+
+  .nav-actions {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .lang-btn {
+    border: 2px solid #1565C0;
+    background: transparent;
+    color: #1565C0;
+    padding: 6px 16px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.2s;
+
+    &:hover {
+      background: #1565C0;
+      color: white;
+    }
+  }
+
+  .menu-btn {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+
+  @media (max-width: 1024px) {
+    .nav-container {
+      padding: 0 16px;
+    }
+
+    .nav-links {
+      gap: 20px;
+    }
+
+    .lang-btn {
+      padding: 6px 12px;
+    }
+  }
+
+  @media (max-width: 767px) {
+    padding: 12px 0;
+
+    &.scrolled {
+      padding: 8px 0;
+    }
+
+    .nav-links {
+      display: none;
+      position: absolute;
+      top: 100%; left: 0; right: 0;
+      background: white;
+      flex-direction: column;
+      padding: 16px;
+      gap: 16px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+
+      .nav-link-btn {
+        width: 100%;
+        text-align: left;
+        padding: 8px 0;
+      }
+
+      &.open { display: flex; }
+    }
+
+    .nav-actions {
+      gap: 8px;
+    }
+
+    .lang-btn {
+      padding: 5px 10px;
+      font-size: 0.85rem;
+    }
+
+    .menu-btn { display: block; }
+  }
+}

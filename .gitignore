@@ -11,6 +11,18 @@
 npm-debug.log
 yarn-error.log
 
+# Environment and Secrets
+.env
+.env.local
+.env.*.local
+.env.development
+.env.production
+*.key
+*.pem
+*.p12
+secret*.ts
+secrets.json
+
 # IDEs and editors
 .idea/
 .project
@@ -19,8 +31,6 @@ yarn-error.log
 *.launch
 .settings/
 *.sublime-workspace
-
-# Visual Studio Code
 .vscode/*
 !.vscode/settings.json
 !.vscode/tasks.json
@@ -39,6 +49,20 @@ testem.log
 /typings
 __screenshots__/
 
+# Build and temporary files
+*.log
+*.swp
+*.swo
+*~
+.tmp/
+
 # System files
 .DS_Store
 Thumbs.db
+desktop.ini
+
+# IDE local settings
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace

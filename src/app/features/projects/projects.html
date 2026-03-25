@@ -1,0 +1,25 @@
+<section id="portfolio" class="projects-section">
+  <div class="container">
+    <h2 class="section-title" data-aos="fade-up">
+      {{ 'projects.title' | translate }}
+    </h2>
+    <div class="projects-grid">
+      <div
+        class="project-card"
+        *ngFor="let project of projects; let i = index"
+        data-aos="fade-up"
+        [attr.data-aos-delay]="i * 150"
+      >
+        <div class="card-icon">{{ project.icon }}</div>
+        <h3>{{ project.title }}</h3>
+        <p>{{ project.description }}</p>
+        <div class="tags">
+          <span class="tag" *ngFor="let tag of project.tags">{{ tag }}</span>
+        </div>
+        <a [href]="project.link" class="card-link">
+          {{ 'projects.view' | translate }} →
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
