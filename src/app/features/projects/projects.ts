@@ -19,8 +19,8 @@ export class PortfolioComponent {
       link: '#'
     },
     {
-      title: 'ระบบเเจ้งซ่อมอุปกรณ์ในองค์กร',
-      description: 'ระบบแจ้งซ่อมแบบ full stack ที่มี workflow ชัดเจนตั้งแต่เปิดงาน, มอบหมายช่าง, ซ่อม, รอตรวจรับ, ไปจนปิดงาน',
+      title: 'Maintenance Request System ',
+      description: 'ระบบเเจ้งซ่อมอุปกรณ์ในองค์กรเเบบ full stack ที่มี workflow ชัดเจนตั้งแต่เปิดงาน, มอบหมายช่าง, ซ่อม, รอตรวจรับ, ไปจนปิดงาน',
       tags: ['Node.js', 'React', 'NeonDB'],
       icon: '📋',
       link: 'https://maintenance-request-system.onrender.com/'

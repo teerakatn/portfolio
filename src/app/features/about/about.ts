@@ -13,7 +13,7 @@ export class AboutComponent {
   info = [
     { icon: '🎓', label: 'about.info.university.label', value: 'about.info.university.value' },
     { icon: '📚', label: 'about.info.major.label', value: 'about.info.major.value' },
-    { icon: '🏢', label: 'about.info.internship.label', value: 'about.info.internship.value' },
+    { icon: '📊', label: 'about.info.GPA.label', value: 'about.info.GPA.value' },
     { icon: '📅', label: 'about.info.duration.label', value: 'about.info.duration.value' },
   ];
 }

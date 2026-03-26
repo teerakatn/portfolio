@@ -10,13 +10,13 @@
     "greeting": "Hello, My name is",
     "name": "Teerakarn Boonmark",
     "role": "Frontend Developer",
-    "sub": "Co-op Student | Kasetsart University",
+    "sub": "Student | Kasetsart University",
     "cta": "My Work",
     "contact": "Contact Me"
   },
   "about": {
     "title": "About Me",
-    "description": "Co-op student",
+    "description": "I am interested in Front-end development because I enjoy designing the visual appearance of websites. Additionally, I am eager to learn new technologies and gain real-world working experience to further improve my skills.",
     "info": {
       "university": {
         "label": "University",
@@ -26,13 +26,13 @@
         "label": "Major",
         "value": "Information Technology"
       },
-      "internship": {
-        "label": "Internship Location",
-        "value": "Company"
+      "GPA": {
+        "label": "GPA",
+        "value": "3.32"
       },
       "duration": {
         "label": "Duration",
-        "value": "4th Year, Semester 2"
+        "value": "2022 - 2026"
       }
     }
 
