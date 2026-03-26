@@ -14,7 +14,7 @@ export class SkillsComponent {
     {
       category: 'Frontend',
       icon: '🎨',
-      skills: ['Angular', 'HTML', 'CSS', 'javaScript']
+      skills: ['Angular', 'HTML', 'CSS', 'JavaScript', 'TypeScript','React']
     },
     {
       category: 'Backend',
